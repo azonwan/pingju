@@ -1,0 +1,262 @@
+<!--
+______                            _              _                                     _
+| ___ \                          | |            | |                                   | |
+| |_/ /___ __      __ ___  _ __  | |__   _   _  | |      __ _  _ __  __ _ __   __ ___ | |
+|  __// _ \\ \ /\ / // _ \| '__| | '_ \ | | | | | |     / _` || '__|/ _` |\ \ / // _ \| |
+| |  | (_) |\ V  V /|  __/| |    | |_) || |_| | | |____| (_| || |  | (_| | \ V /|  __/| |
+\_|   \___/  \_/\_/  \___||_|    |_.__/  \__, | \_____/ \__,_||_|   \__,_|  \_/  \___||_|
+                                          __/ |
+                                         |___/
+  ========================================================
+                                           phphub.org
+
+  --------------------------------------------------------
+  Laravel: v4.2.8
+-->
+
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+
+		<meta charset="UTF-8">
+
+		<title>
+			Create a New Topic_PHPHub  - PHP & Laravel的中文社区
+			
+		</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<meta name="keywords" content="PHP,Laravel,PHP论坛,Laravel论坛,PHP社区,Laravel社区" />
+		<meta name="author" content="The PHP China Community." />
+		<meta name="description" content=" PHP China 是 PHP 和 Laravel 的中文社区，致力于推动 Laravel, php-fig 等国外 PHP 新技术, 新理念在中国的发展。 " />
+
+        <link rel="stylesheet" href="assets/css/styles-c10b02c6.css">
+
+        <link rel="shortcut icon" href="favicon.ico"/>
+
+        <script>
+            Config = {
+                'cdnDomain': '',
+                'user_id': 64,
+                'routes': {
+                    'notificationsCount' : 'http://localhost/notifications/count',
+                    'upload_image' : 'http://localhost/upload_image'
+                },
+                'token': 'J7o3vxHSxtkAFC8cJtDpvMgOdQGzqPtQaWKymWoM',
+            };
+        </script>
+
+	    
+	</head>
+	<body id="body">
+
+		<div id="wrap">
+
+			<div role="navigation" class="navbar navbar-default navbar-static-top topnav">
+  <div class="container">
+    <div class="navbar-header">
+
+      <a href="/" class="navbar-brand">PHPHub</a>
+    </div>
+    <div id="top-navbar-collapse" class="navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class=" active"><a href="http://localhost/topics">Topics</a></li>
+        <li class=""><a href="http://localhost/nodes/40">Jobs</a></li>
+        <li class=""><a href="http://localhost/wiki">Wiki</a></li>
+        <li class=""><a href="http://localhost/about">About</a></li>
+        <li><a href="http://laravel-china.org/" target="_blank">Document</a></li>
+      </ul>
+
+      <div class="navbar-right">
+        <form method="GET" action="http://localhost/search" accept-charset="UTF-8" class="navbar-form navbar-left">
+          <div class="form-group">
+          <input class="form-control search-input mac-style" placeholder="Search" name="q" type="text">
+          </div>
+        </form>
+        <ul class="nav navbar-nav github-login" >
+                        <li>
+                  <a href="http://localhost/notifications" class="text-warning">
+                      <span class="badge badge-fade" id="notification-count">
+                          
+                      </span>
+                  </a>
+              </li>
+              <li>
+                  <a href="http://localhost/users/64">
+                      <i class="fa fa-user"></i> eum
+                  </a>
+              </li>
+              <li>
+                  <a class="button" href="http://localhost/logout" onclick=" return confirm('Are you sure you want to logout?')">
+                      <i class="fa fa-sign-out"></i> Logout
+                  </a>
+              </li>
+                  </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+			<div class="container">
+
+				
+				
+<div class="topic_create">
+
+  <div class="col-md-8 main-col">
+
+    <div class="reply-box form box-block">
+
+      <div class="alert alert-warning">
+          This is public place, please be nice. ;-)
+      </div>
+
+      
+              <form method="POST" action="http://localhost/topics" accept-charset="UTF-8" id="topic-create-form"><input name="_token" type="hidden" value="J7o3vxHSxtkAFC8cJtDpvMgOdQGzqPtQaWKymWoM">
+      
+        <div class="form-group">
+            <select class="selectpicker form-control" name="node_id" >
+
+              <option value="" disabled selected>Pick a node</option>
+
+                              <optgroup label="PHP">
+                                      <option value="7"  >php</option>
+                                      <option value="8"  >Laravel</option>
+                                      <option value="9"  >Composer & Packagist</option>
+                                      <option value="10"  >重构</option>
+                                      <option value="11"  >设计模式</option>
+                                      <option value="12"  >Testing</option>
+                                      <option value="13"  >部署</option>
+                                      <option value="14"  >开源项目</option>
+                                  </optgroup>
+                              <optgroup label="Web 开发">
+                                      <option value="15"  >MySQL</option>
+                                      <option value="16"  >Database</option>
+                                      <option value="17"  >Git</option>
+                                      <option value="18"  >Linux</option>
+                                      <option value="19"  >WebServer</option>
+                                      <option value="20"  >算法</option>
+                                      <option value="21"  >运维</option>
+                                      <option value="22"  >安全</option>
+                                      <option value="23"  >云服务</option>
+                                  </optgroup>
+                              <optgroup label="Mobile">
+                                      <option value="24"  >iPhone</option>
+                                      <option value="25"  >Android</option>
+                                  </optgroup>
+                              <optgroup label="Languages">
+                                      <option value="26"  >JavaScript</option>
+                                      <option value="27"  >Ruby</option>
+                                      <option value="28"  >Python</option>
+                                      <option value="29"  >GoLang</option>
+                                      <option value="30"  >Erlang</option>
+                                  </optgroup>
+                              <optgroup label="社区">
+                                      <option value="31"  >公告</option>
+                                      <option value="32"  >反馈</option>
+                                      <option value="33"  >社区开发</option>
+                                      <option value="34"  >线下聚会</option>
+                                  </optgroup>
+                              <optgroup label="分享">
+                                      <option value="35"  >健康</option>
+                                      <option value="36"  >工具</option>
+                                      <option value="37"  >其他</option>
+                                      <option value="38"  >书籍</option>
+                                      <option value="39"  >求职</option>
+                                      <option value="40"  >招聘</option>
+                                      <option value="41"  >创业</option>
+                                      <option value="42"  >移民</option>
+                                  </optgroup>
+                          </select>
+        </div>
+
+        <div class="form-group">
+          <input class="form-control" id="topic-title" placeholder="Please write down a topic" name="title" type="text">
+        </div>
+
+        <div id="reply_notice" class="box" style="display:none">
+    <ul class="helpblock list">
+      <li>Please be careful with the Chinese and English Typography <a href="https://github.com/sparanoid/chinese-copywriting-guidelines">take reference</a></li>
+      <li>Support for Markdown format, <strong>**Strong**</strong>、~~Line Delete~~、<code>`Quick Code`</code></li>
+      <li>Support Emoji see <a href="http://www.emoji-cheat-sheet.com" target="_blank" rel="nofollow">Emoji cheat sheet</a></li>
+      <li>@name link to the user, and send him a notification in the meantime.</li>
+      <li>Upload image, support both `drag and drop` and `pasting from the clipboard`, format limited to - jpg, png, gif</li>
+    </ul>
+</div>
+
+        <div class="form-group">
+          <textarea class="form-control" rows="20" style="overflow:hidden" id="reply_content" placeholder="Please use markdown." name="body" cols="50"></textarea>
+        </div>
+
+        <div class="form-group status-post-submit">
+          <input class="btn btn-primary" id="topic-create-submit" type="submit" value="Publish">
+        </div>
+
+        <div class="box preview markdown-body" id="preview-box" style="display:none;"></div>
+
+      </form>
+
+    </div>
+  </div>
+
+  <div class="col-md-4 side-bar">
+
+    
+    <div class="panel panel-default corner-radius help-box">
+      <div class="panel-heading text-center">
+        <h3 class="panel-title">This kind of topic is not allowed.</h3>
+      </div>
+      <div class="panel-body">
+        <ul class="list">
+          <li>这里放一些关于论坛的基本说明</li>
+          <li>请尽量分享技术相关的话题, 谢绝发布社会, 政治等相关新闻</li>
+          <li>这里绝对不讨论任何有关盗版软件、音乐、电影如何获得的问题</li>
+          <li>这里绝对不会全文转载任何文章，而只会以链接方式分享</li>
+      </div>
+    </div>
+
+    <div class="panel panel-default corner-radius help-box">
+      <div class="panel-heading text-center">
+        <h3 class="panel-title">We can benefit from it.</h3>
+      </div>
+      <div class="panel-body">
+        <ul class="list">
+          <li>分享生活见闻, 分享知识</li>
+          <li>接触新技术, 讨论技术解决方案</li>
+          <li>为自己的创业项目找合伙人, 遇见志同道合的人</li>
+          <li>自发线下聚会, 加强社交</li>
+          <li>发现更好工作机会</li>
+          <li>甚至是开始另一个神奇的开源项目</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+			</div>
+
+		</div>
+
+	  <div id="footer" class="footer">
+	    <div class="container small">
+	      <p class="pull-left">
+	      	<i class="fa fa-heart-o"></i> Made With Love By The EST Group. <br>
+			&nbsp;<i class="fa fa-lightbulb-o"></i> Inspired by v2ex & ruby-china.
+	      </p>
+
+	      <p class="pull-right">
+	      	<i class="fa fa-cloud"></i> Powered by <a href="https://www.linode.com/?r=3cfb2c09c29cf2b6e6c87cc1f71ffdc2f9ea5722" target="_blank">Linode <i class="fa fa-external-link"></i></a>.
+	      </p>
+	    </div>
+	  </div>
+
+        <script src="assets/js/scripts-7f863f2b.js"></script>
+
+	    
+        
+	</body>
+</html>
